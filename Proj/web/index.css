@@ -1,0 +1,93 @@
+body{
+    margin: 0.1%;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.head{
+    background-image: url("./assets/tecno.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.cabeca{
+    display: flex;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.637);
+    color: #fff;
+    
+}
+
+.head>.cabeca>ul>li{
+    font-size: 21.5px;
+    display: inline-block;
+    padding-left: 220px;
+    padding-top: 25px;
+}
+.joe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 43%;
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+h3{
+    color: #fff;
+    font-size: 2rem;
+}
+
+h2{
+    text-align: center;
+    font-size:1.4rem;
+    padding: 10px;
+    margin-top: 5%
+}
+
+.box{
+    width:25vw;
+    height:33vw;
+    border:solid 1px;
+}
+.box h1{
+    text-align: center;
+}
+
+.boxs {
+    display: flex;
+    
+    margin-top: 80px;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    padding-top: 20px;
+}
+
+button{
+    width: 25vw;
+    height: 100%;
+    border: none;
+    background-color: rgb(117, 117, 117);
+}
+
+.botao p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    align-items: center;
+    padding: 0;
+    width: 100%
+}
+.image {
+    background-color: rgb(117, 117, 117);
+    height: 8vh;
+    display:flex;
+    align-items: center;
+}
+
+
