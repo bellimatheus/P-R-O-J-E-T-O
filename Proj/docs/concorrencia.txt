@@ -1,0 +1,13 @@
+1 - National Car Rental
+	"Pelo sétimo ano consecutivo a topo do ranking é ocupado pela National Car Rental. A companhia com sede em Clayton, no estado norte-americano de Missouri, foi fundada em 1947 e hoje tem mais de 2 mil agências em todo o mundo. A 		National faz parte do grupo Enterprise Holdings, que também é proprietário da Enterprise Rent-A-Car e Alamo Rent a Car. No Brasil, a empresa tem parceria com a locadora Unidas.
+	Na pesquisa da Travel+Leisure os usuários apontaram a qualidade do serviço e a ampla seleção de veículos de alta qualidade como os pontos mais fortes da empresa. "
+
+3 - Hertz
+	"Fundada em 1918 nos Estados Unidos, hoje a Hertz está presente em 145 países, inclusive do Brasil. A locadora é controlada pela Hertz Corporation, que também administra a Dollar e Thrifty Rental Car. O grupo conta hoje com mais 		de 30 mil pontos de atendimento no mundo. A Hertz teve uma unidade no Brasil até dezembro de 2016, quando as operações por aqui foram compradas pela Localiza, que passou a se chamar Localiza Hertz. Ontem, a Localiza anunciou a 		rescisão do contrato de cooperação com a Hertz, o que deve ocorrer nos próximos seis meses. Não se sabe se a locadora americana, que está em recuperação judicial, voltará a funcionar no Brasil futuramente. "
+
+3 - Enterprise Rent-a-Car
+	" É a maior companhia de aluguel de carros dos Estados Unidos com mais de 9 mil agências. Também está presente no Canadá, Alemanha, Irlanda, Porto Rico e Reino Unido. "
+
+4 - Avis
+	"A Avis Rent a Car é das principais locadoras de veículos de todo o mundo com 5000 agências em 175 países, incluindo o Brasil. A Avis foi fundada em 1946 no Aeroporto de Detroit, nos Estados Unidos."
+
