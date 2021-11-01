@@ -1,0 +1,101 @@
+
+body{
+    margin: 0.1%;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.head{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assests/imagens.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.cabeca{
+    display: flex;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.568);
+    color: rgb(0, 0, 0);
+    
+}
+
+#reser{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#reser:hover{
+    color: rgb(53, 111, 150);
+}
+
+.acesso{
+    border: 1px solid #000;
+    margin: 5% 31% 0 31%;
+    padding: 5% 0 5% 0;
+    background-image: radial-gradient(rgb(163, 163, 163), rgb(10, 8, 8));
+    border-radius: 4px;
+}
+
+.acesso > h2,p{
+    margin-left: 20%;
+}
+
+.entrar{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.lista>ul>li{
+    font-size: 21.5px;
+    display: inline-block;
+    padding-left: 120px;
+    padding-top: 25px;
+    flex-direction: column;
+}
+input{
+    height: 4vh;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgb(53, 111, 150);
+}
+
+.parteDeBaixo{
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+
+}
+.log{
+    padding: 1% 0 0 1%;
+    
+}
+.social{
+    padding-left: 5%;
+}
+.social>ul>li{
+    display: inline-block;
+    padding: 0 5% 0 0%;
+    cursor: pointer;
+}
+.social>ul>li>img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
