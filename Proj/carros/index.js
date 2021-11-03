@@ -8,7 +8,7 @@ fetch(url)
     })
     .then(data => {
         data.forEach(carros => {
-            let carro = documente.querySelector(".pad").cloneNode(true);
+            let carro = documente.querySelector(".pic-ctn").cloneNode(true);
 
             carro.classList.remove("model");
             carro.querySelector("h3").innerHTML = carros.tipo;

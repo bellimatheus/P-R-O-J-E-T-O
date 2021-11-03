@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="/assests/logo1.png" type="image/x-icon">
+    <title>Vilebe</title>
+</head>
+<body>
+    <header class="head">
+        
+        <div class="cabeca">
+            <img id="logo" src="/assests/logo.png">
+
+        </div>
+
+        <div class="acesso">
+            <h2>Ja possui cadastro?<a id="acess" href="/login/index.html">Clique aqui</a></h2>
+            <form class="entrar" action="">
+                <h3>Informe seus dados</h3>
+                <input type="text" name="doc1" placeholder="CPF..." maxlength="11">
+                <input type="text" name="doc2" placeholder="CNH (opcional)..."><br><br>
+                <input type="email" name="doc3" placeholder="email...">
+                <input type="text" name="doc4" placeholder="Nome completo..."><br><br>
+                <input type="date" name="doc5" placeholder="Data de nascimento...">
+                <input type="text" name="doc6" placeholder="Endereço..."><br><br>
+                <input type="tel" name="doc7" placeholder="Telefone..." pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                <input type="password" name="id"  placeholder="Senha...">
+                <h3>Dados bancários (opcional neste cadastro)</h3>
+                <input type="text" name="doc8" placeholder="Nome titular..." maxlength="11">
+                <input type="number" name="doc8" placeholder="Numero do cartão..." maxlength="12"><br><br>
+                <input type="date" name="doc8" placeholder="Validade do cartão..." maxlength="11">
+                <input type="number" name="doc8" placeholder="Código de segurança..." maxlength="11"><br><br>
+                
+                <input id="button" type="submit" value=" Cadastrar" onclick="cadastro()">
+            </form>
+        </div>
+    </header>
+</body>
+<script src="index.js"></script>
+</html>
