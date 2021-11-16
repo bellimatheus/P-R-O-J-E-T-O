@@ -1,65 +1,80 @@
-body {
-    margin: 0%;
+*{
+    margin: 0;
     padding: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
     box-sizing: border-box;
+    
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: column;
     overflow-x: hidden;
-}
-
-.head {
-    width: 100%;
-    height: 100vh;
-    background-image: url("/assests/Carros/images1.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.cabeca {
-    display: flex;
-    border: 1px solid #000;
-    background-color: #0000008a;
-    color: rgb(255, 255, 255);
-}
-
-#logo{
-    background-color: #6e04a0;
-}
-
-
-img:target {
-    background-color: gold;
 }
 html {
     scroll-behavior: smooth;
 }
 
+.head{
+    background-image: url('/assests/Carros/images1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
 
-
-.lista > ul > li {
-    font-size: 21.5px;
-    display: inline-block;
-    padding-left: 120px;
-    padding-top: 25px;
-    flex-direction: column;
-    position: relative;
+}
+.cabeca{
+    display: flex;
+    
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+.ggizi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#carro {
-    text-decoration: underline;
+.lst{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lst>li{
+    margin: 3vw;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+#carro{
     cursor: pointer;
+    color: #fff;
+}
+#carro:hover{
+    color: gold;
 }
 
-a {
+#logo{
+    background-color: gold;
+    
+}
+
+a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
-
+a:hover{
+    color: gold;
+}
 
 .sobre{
     text-align: center;
-    font-size: 22px;
-    padding-top: 11%;
+    font-size: 15px;
+    padding-top: 5%;
+    color: gold;
+    text-shadow: 0px 10px 5px rgb(0, 0, 0);
 }
 
 .restante {
@@ -67,11 +82,14 @@ a {
     grid-template-rows: auto, auto, auto, auto;
     width: 100%;
     height: 100%;
+    color: #000;
+    background-color: #000;
 }
 
 .previa {
-    text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    margin: 3% auto;
+    color: gold;
 }
 
 #h3 {
@@ -79,12 +97,29 @@ a {
     text-decoration: underline;
 }
 
+.tieppos {
+    position: relative;
+    width: 90%;
+    margin-top: 5vh;
+    text-align: center;
+    color: gold;
+}
+
+.tieppos > h3{
+    position: absolute;
+    padding-left: 13%;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
 .carritos {
     width: 100vw;
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
-    background-color: #859594;
+    background-color: rgba(255, 217, 0, 0.87);
 }
 
 @keyframes display {
@@ -110,27 +145,12 @@ a {
     }
 }
 
-.tieppos {
-    position: relative;
-    width: 90%;
-    margin-top: 10vh;
-    text-align: center;
-}
-
-.tieppos > h3{
-    position: absolute;
-    padding-left: 5%;
-    top: 0;
-    left: calc(50% - 100px);
-    opacity: 0;
-    animation: display 10s infinite;
-}
-
 .pic-ctn {
     position: relative;
     width: 100vw;
     height: 40vh;
     margin-top: 5vh;
+    margin-bottom: -2vw;
     text-align: center;
 }
 
@@ -177,16 +197,10 @@ h3:nth-child(5) {
     animation-delay: 8s;
 }
 
-.pad{
-    width: 100%;
-    margin: 1%;
-    border: 1px solid #000;
-    text-align: center;
-    margin-bottom: 2.5%;
-}
-
 #text {
+    margin-top: 5vw;
     margin-left: 0.2%;
+    color: gold;
 }
 
 .example input[type="text"] {
@@ -195,10 +209,10 @@ h3:nth-child(5) {
     margin-left: 0.2%;
     padding: 10px;
     font-size: 100%;
-    border: 1px solid grey;
+    border: 1px solid gold;
     float: left;
     width: 25vw;
-    height: 3vh;
+    height: 5vh;
     background: #f1f1f1;
     border-radius: 3px;
 }
@@ -214,53 +228,260 @@ h3:nth-child(5) {
 }
 
 .veiculos {
+
+    grid-gap: 0px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    width: 100%;
-    background-color: #777676;
-    text-align: center;
-    font-size: 25px;    
-    padding-bottom: 0.1%;
-}
-
-.veiculos>.pad {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 91%;
-    height: 31vh;
+    justify-content: center;
+    background-color: #70b4b1;
     text-align: center;
     font-size: 25px;
+    
+}
+
+.pad {
+    width: 91%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin: 1%;
+    margin-left: 1%;
+    margin-right: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #000;
+}
+
+.pad>img{
+    width: 100%;
 }
 
 h3 {
     margin-left: 1%;
     text-decoration: underline;
+    color: gold;
 }
+
 #pop{
     margin-top: 5%;
 }
 
-.parteDeBaixo {
-    background-color: rgb(219, 219, 219);
+.parteDeBaixo{
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    padding-top: 5%;
+    color: gold;
+}
+
+.parteDeBaixo>.log>a>img{
+    background-color: gold;
+    
+
+}
+.log{
+    text-align: center;
+    padding-left: 2%;
+}
+
+#inff{
+    padding-top:2%;
+    padding-left:3vw;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.social{
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 3%;
 }
 
-.log {
-    padding: 1% 0 0 1%;
-}
-
-.social {
-    padding-left: 5%;
-}
-
-.social > ul > li {
-    display: inline-block;
-    padding: 0 5% 0 0%;
+.social>ul{
+    display: flex;
     cursor: pointer;
+    padding-left: 2.5vw;
+    padding-top: 1%;
 }
 
-.social > ul > li > img {
+.social>ul>li{
+    margin: 0.5vw;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.social>ul>li>img{
     width: 100%;
     border-radius: 50%;
 }
+
+@media(max-width:1000px){
+
+    .veiculos{
+        grid-gap: 4px;
+        padding-left: 6px;
+        padding-right: 15.7px;
+    }
+    .pad{
+        width: 100%;
+        
+    }
+
+    .carritos{
+        height: 70%;
+        margin-bottom: 1%;
+    }
+
+    .pic-ctn>img{
+        width: 100%;
+        text-align: center;
+    }
+
+    #text{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:600px){
+
+    html,body{
+    overflow-x: hidden;
+    }
+    
+    #logo {
+        width: 200px;
+    }
+    .lst>li{
+        font-size: 12px;
+    }
+    .sobre {
+        flex-wrap: wrap;
+        font-size: 80%;
+        margin: 10% auto;
+        position:static;
+    }
+
+    .previa{
+        margin: 5% auto;
+        text-align: center;
+        font-size: 15px; 
+    }
+
+    .veiculos{
+        width: 100%;
+        font-size: 16px;
+        padding-right:15px;
+        padding-left: 4px;
+    }
+
+    .carritos{
+        height: 200px;
+        margin-bottom: 10%;
+        
+    }
+
+    .pic-ctn>img{
+        width: 100%;
+    }
+    
+    .parteDeBaixo{
+        background-color: rgb(219, 219, 219);
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+    }
+        
+    .log{
+        text-align: center;
+    }
+        
+    .parteDeBaixo>.log>a>img{
+        background-color: #6e04a0;
+        width: 90%;
+        
+    }
+        
+    .social{
+        text-align: center;
+        padding-right: 10%;
+        align-items: center;
+    }
+    
+    .social>ul>li{
+        display: inline-block;
+        cursor: pointer;
+    }
+        
+    .social>ul>li>img{
+        border-radius: 50%;
+    }
+    .parteDeBaixo>.log>a>img{
+        background-color: #6e04a0;
+        width: 200px;
+        
+    }
+
+}
+
+@media (max-width:355px){
+
+    .cabeca{
+        flex-wrap: wrap;
+        padding-left: 5%;
+    }
+
+    #logo {
+        width: 120px;
+    }
+    .lst>li{
+        font-size:10px;
+    }
+    .sobre{
+        font-size: 50%;
+        margin-top: -2px;
+    }
+
+    .previa{
+        padding-right: 50px;
+        margin-left:0;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .veiculos{
+        width: 100%;
+        font-size: 7px;
+        padding-right:15px;
+        padding-left: 4px;
+    }
+
+
+    .tieppos{
+        margin-left: 5%;
+        margin-bottom: 3%;
+        font-size: 12px;
+    }
+
+    .carritos{
+        height: 100px;
+    }
+
+    .pic-ctn>img{
+        width: 100%;
+    }
+
+    #logo1 {
+        width: 120px;
+    }
+    #inff{
+        font-size: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    .log{
+        font-size: 11px;
+    }
+}
+
+

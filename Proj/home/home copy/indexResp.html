@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="/assests/home/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="indexResp.css">
+    <link rel="icon" href="/logo1.png" type="image/x-icon">
     <title>Vilebe</title>
 </head>
 <body>
 
     <header class="head">
         <div class="cabeca">
-            <a href="#"><img id="logo" src="/assests/home/logo.png">
+            <a href="#"><img id="logo" src="/logo.png">
             <div class="ggizi">
                 <ul class="lst">
                     <li id="car"><a href="/carros/index.html" target="_blank">Carro</a></li>                                   
                     <li><a href="/web/index.html" target="_blank">Agência</a></li>
                     <li><a href="/reservas/index.html" target="_blank">Minhas reservas</a></li>
-                    <li><a href="/login/index.html" target="_blank"><p id="name"></p></a></li>
+                    <li><a href="/login/index.html" target="_blank">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -28,33 +28,14 @@
             <form class="aluga">
                 <div class="localidade">
                         <h2>Escolha onde e quando retirar seu carro:</h2>
-                        <input type="text" name="Aeroportos" id="local" placeholder="Local de retirada:" required>
+                        <input type="text" name="Aeroportos" id="local" placeholder="Local de retirada:">
                 </div>
 
                 <div class="horaData">
-                        <input type="date" name="DataRetirada" id="data" placeholder="Data: " required>
-                        <input type="time" name="Hora" id="hora" placeholder="Hora: " required>
+                        <input type="date" name="DataRetirada" id="data" placeholder="Data: ">
+                        <input type="time" name="Hora" id="hora" placeholder="Hora: ">
                 </div>
-                <label for="Alugar"></label>
-                <button type="button" id="btn" onclick="locacao()">Alugar</button>
             </form>
-
-            <form class="aluga modal">
-
-                <div class="localidade">
-                        <!-- <h2>Escolha onde e quando devolver seu carro:</h2> -->
-                        <input type="text" name="Aeroportos" id="dev" placeholder="Local de retirada:" required>
-                </div>
-
-                <div class="horaData">
-                        <input type="date" name="DataRetirada" id="devData" placeholder="Data: " required>
-                        <input type="time" name="Hora" id="devHora" placeholder="Hora: " required>
-                </div>
-                
-                <label for="Alugar"></label>
-                <!-- <button type="button" id="btn" onclick="locacao()">Alugar</button> -->
-            </form>
-            
         </div>
     </header>
     <section class="restante">
@@ -67,67 +48,65 @@
                 em sua frota carros diferenciados como o Jaguar, o híbrido Toyota Prius, o Corvette conversível e outros carros de luxo.
             </p>
         </div>
-        <hr>
+        
         <h2 class="texto2">Conheça nossos veículos:</h2>
         <div class="car">
             
             <div class="model">
-                <h3> Fiat Mobi</h3>
-                <a href="#" target="_blank"><img src="/assests/Carros/RRPop.png"></a>
-                <p class="par">Ótimos espaço interno, desempenho e consumo. os itens de segurança, como os 6 airbags, também são diferenciais na categoria</p>
+                <h3>Popular: Fiat Mobi Drive GSR</h3>
+                <a href="#"><img src="/RRPop.png"></a>
+                <p>Ótimos espaço interno, desempenho e consumo. os itens de segurança, como os 6 airbags, também são diferenciais na categoria</p>
             </div>
             
             <div class="model">
-                <h3> Ford KA</h3>
-                <a href="#" target="_blank"><img class="img1" src="/assests/Carros/RREco.png"></a>
-                <p class="par">Ele é super econômico, e isso já torna ele um popular perfeito. além disso, não tem outro popular com acabamento tão bem feito</p>
+                <h3>Econômico: Ford KA</h3>
+                <a href="#" target="_blank"><img class="img1" src="/RREco.png"></a>
+                <p>Ele é super econômico, e isso já torna ele um popular perfeito. além disso, não tem outro popular com acabamento tão bem feito</p>
             </div>
     
             <div class="model">
-                <h3> Aventador</h3>
-                <a href="#" target="_blank"><img class="img1" src="/assests/Carros/RREsportivo.png"></a>
+                <h3>Esportivo: Lamborghini Aventador</h3>
+                <a href="#" target="_blank"><img class="img1" src="/RREsportivo.png"></a>
                 <p>A potência maior, porém, não significa que este novo Lamborghini seja completamente estúpido. É preciso respeitá-lo para descobrir que, com a dose certa de sensibilidade, é possível se divertir muito com ele.</p>
             </div>
             
         </div>
-        <hr>
+
         <h2 class="texto3">Avaliação de nossos clientes</h2>
         <div class="cliente">
             
             <div class="cli">
-                <img src="/assests/home/cli.jpg">
+                <img src="/cli.jpg">
                 <p>Terry C.<br><br>
                     Eu sinceramente recebi o melhor serviço que poderia ter pedido. Eles foram superprofissionais; atenderam a todas as minhas necessidades e me ajudaram muito.</p>
             </div>
         
             <div class="cli">
-                <img src="/assests/home/cliente.jpeg">
+                <img src="/cliente.jpeg">
                 <p>Gabriel R.<br><br>
                     Toda a experiência foi muito fácil e amigável, e o preço foi muito razoável. Não sei o que teria feito sem eles.</p>
             </div>
 
             <div class="cli">
-                <img src="/assests/home/cliente.png">
+                <img src="/cliente.png">
                 <p>Fabiana A.<br><br>
                     Há uma infinidade de coisas boas sobre a qualidade dessa empresa. Super indico!</p>
             </div>
         </div>
-        <hr>
+        
         <div class="app">
             <div class="imagem">
-                <img src="/assests/home/mobile.png">
+                <img src="/mobile.png">
             </div>
             <div class="info">
-                <p>Mais uma noite como todas as anteriores. Pego minha caneca de café cheia. Sei lá, o café chega ao fim e trago a ultima ponta, nada muda.</p>
-                <img src="/assests/home/download (1).png">
-                <img src="/assests/home/download (2).png">
-                <p>Ela não precisa se esforçar para ter a minha atenção
-                    O que ela tem não dá pra entender
-                    Me diz porque eu não tô com você</p>
+                <p>Use nosso app e ganhe descontos de até 15%.</p>
+                <img src="/download (1).png">
+                <img src="/download (2).png">
+                <p>Use a qualquer hora e em qualquer lugar</p>
             </div>
 
         </div>
-        <hr>
+        
         <div class="suporte">
             <form action="" class="reclamar">
                 <h2 class="texto4">Fale conosco</h2>
@@ -142,27 +121,22 @@
         </div>
 
     </section>
-    <hr>
+
     <footer class="parteDeBaixo">
         <div class="log">  
-            <a href="#logo"><img id="logo1" src="/assests/home/logo.png"></a>
-        </div>
-        
-        <div id="inff">
-                <p>+012 345 6789 <br> mybusiness@company.com <br> Avenida Central, nº 1234, Cidade, País</p><br>
-        </div>
-
-        <div class="log">  
+            <a href="#logo"><img id="#logo1" src="/logo.png"></a>
+            <p>+012 345 6789 <br> mybusiness@company.com <br> Avenida Central, nº 1234, Cidade, País</p><br>
             <h3> Siga-nos nas redes sociais </h3>
         </div>
         <div class="social">
             <ul>
-                <li><img src="/assests/home/download (3).png"></li>
-                <li><img src="/assests/home/images.png"></li>
-                <li><img src="/assests/home/download (7).png"></li>
-                <li><img src="/assests/home/download (6).png"></li>
+                <li><img src="/download (3).png"></li>
+                <li><img src="/images.png"></li>
+                <li><img src="/download (7).png"></li>
+                <li><img src="/download (6).png"></li>
             </ul>
         </div>
+
     </footer>
 </body>
 <script src="index.js"></script>

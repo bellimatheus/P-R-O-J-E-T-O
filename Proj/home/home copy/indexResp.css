@@ -6,16 +6,15 @@
 html,body{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     flex-direction: column;
-    background-color: #000;
 }
 html {
     scroll-behavior: smooth;
 }
 
 .head{
-    background-image: url('/assests/Carros/images.jpg');
+    background-image: url('images.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -59,95 +58,61 @@ a:hover{
 }
 
 .buraco{
-    width: 100%;
+    width: 70%;
     color: gold;
     background-color: rgba(0, 0, 0, 0.596);
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 20% auto;
     font-size: 10px;
     padding: 0;
-    text-align: center;
+    
 }
 
 
-.aluga>div {
-    margin: 8px 0;
-
+.aluga>div{
+    margin: 8px 0; 
 }
 
-.aluga{
-    width: 100%;
-    height: 100%;
-}
-
-.modal{
-    display: none;
-}
-
-.localidade, .localDev{
+.localidade{
     width: 100%;
 }
 
-#local, #local2{
+#local{
     width: 280px;
-    height: 33px;
+    height: 25px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid gold;
+    border: none;
 }
 
-.horaData, .dataDev{
+.horaData{
     width:100%;
 }
 
-#data, #data2, #hora, #hora2{
-    height: 33px;
+#data, #hora{
+    height: 25px;
     padding: 5px;
-
     border-radius: 5px;
-    border: 1px solid gold;
+    border: none;
 }
-#data, #data2{
+#data{
     width: 139px;
 }
-
-#data, #hora{
-    margin: 0;
-}
-
-#hora, #hora2{
+#hora{
     width: 140px;
-}
-
-#btn{
-    width: 40%;
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-#btn:hover{
-    background-color: gold;
-    color: #000;
-}
-
-.localDev, .dataDev{
-    width: 100%;
 }
 
 .restante{
     display: grid;
     grid-template-rows: auto, auto, auto, auto, auto, auto;
     justify-content: center;
-    background-color: #000;
+    
 }
-
 .texto{
-    margin-top: 0.5%;
+    margin-top: 1%;
     padding-bottom: 1%;
-    background-color: rgb(0, 0, 0);
-    color: gold;
+    background-color: rgb(219, 219, 219);
     text-align: center;
 }
 .texto1{
@@ -158,100 +123,76 @@ a:hover{
 .car{
     display: flex;
     flex-direction: row;
-    background-color: rgb(0, 0, 0);
-    color: gold;
-}
-
-hr{
-    color: gold;
-    border: 1px solid;
-    margin-top: 4%;
+    background-color: #fff;
 }
 
 .texto2{
     width: 100%;
     text-align: center;
-    margin-top: 4%;
-    background-color: rgb(0, 0, 0);
-    color: gold;
+    margin-top: 3%;
+    background-color: #fff;
 }
 
 .model{
     width: 30%;
     margin-left: 2.5%;
-    border: 1px solid gold;
+    border: 1px solid #000;
     text-align: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 1.7%;
 }
 .model>p,h3{
     padding:1%;
 }
 
 h2{
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
-
+.cliente{
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.cli{
+    width: 20%;
+    height: 85%;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 0.5%;
+    padding: 1%;
+}
+.cli>img{
+    width: 50%;
+    border-radius: 50%;
+}
 .texto3{
     width: 100%;
     height: 100%;
     text-align: center;
     margin-top: 3%;
     padding-top: 3%;
-    background-color: rgb(0, 0, 0);
-    color: gold;
+    background-color: rgb(219, 219, 219);
 }
-
-.cliente{
-    background-color: rgb(0, 0, 0);
-    color: gold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5%;
-}
-
-.cli{
-    width: 20%;
-    height: 90%;
-    border: 1px solid gold;
-    text-align: center;
-    margin: 0.5%;
-    margin-top: 4%;
-    padding: 1%;
-    padding-bottom: 0%;
-}
-
-.cli>img{
-    width: 50%;
-    border-radius: 50%;
-}
-
 .app{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #000;
-    color: gold;
+    color: #fff;
     padding: 1%;
     font-size: 40px;
 }
-
 .imagem>img{
     width: 100%;
     padding: 1%;
     margin-left: 1%;
 }
-
 .info>img{
     width: 20%;
     padding: 1%;
     margin-right: 1%;
-}
-
-.info{
-    font-size: 50%
 }
 
 .texto4{
@@ -271,30 +212,18 @@ h2{
     margin-bottom: 0%;
     border: 0px solid #000;
     padding : 1%;
-    background-color: rgb(83, 87, 86);
-    color: gold;
+    background-color: rgb(219, 219, 219);
 }
 
-#name, #tel {
-    height: 7%;
-    border-radius: 0.5vw;
-    border: 1px solid gold;
-    color: gold;
-}
-
-#email{
-    width: 100%;
-    height: 7%;
-    border-radius: 0.5vw;
-    border: 1px solid gold;
-    color: gold;
+#name, #tel, #email{
+    border-radius: 1vw;
+    border: 1px solid #000;
 }
 
 textarea{
     width: 98%;
     height: 25vh;
-    border-radius: 0.5vw;
-    border: 1px solid gold;
+    border-radius: 1vw;
 }
 
 #botao{
@@ -303,37 +232,30 @@ textarea{
     height: 7%;
     border-radius: 7px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid gold;
+    border: 1px solid #000;
 }
 #botao:hover{
-    background-color: gold;
+    background-color: rgb(114, 113, 113);
     cursor: pointer;
 }
 
 .parteDeBaixo{
-    background-color: rgb(0, 0, 0);
-    color: gold;
+    background-color: rgb(219, 219, 219);
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin-top: 0%;
+    margin-top: 3%;
     padding-top: 1%;
 }
-
 .log{
     text-align: center;
     padding-left: 3%;
 }
 
 .parteDeBaixo>.log>a>img{
-    background-color: gold;
-}
+    background-color: #6e04a0;
+    
 
-#inff{
-    padding-top:2%;
-    padding-left:3vw;
-    padding-bottom: 1%;
-    text-align: center;
 }
 
 .social{
@@ -345,14 +267,14 @@ textarea{
 .social>ul{
     display: flex;
     cursor: pointer;
-    padding-left: 2.5vw;
-    padding-top: 1%;
+    
 }
 
 .social>ul>li{
     margin: 1vw;
     justify-content: space-around;
     list-style-type: none;
+    font-size: 30px;
 }
 
 .social>ul>li>img{
@@ -360,89 +282,6 @@ textarea{
     border-radius: 50%;
 }
 /**/
-
-
-@media (max-width:1920px) {
-    #logo {
-        width: 400px;
-    }
-
-    .lst>li{
-        font-size: 250%;
-    }
-    
-    .buraco{
-        margin: 220px auto;
-        margin-bottom: 0px;
-        width: 50%;
-        text-align: center;
-    }
-
-    .suporte{
-        padding-bottom: 30px;
-    }
-
-    .parteDeBaixo{
-        font-size: 130%;
-        
-        margin: 0;
-    }
-
-    .log>h3{
-        
-        padding:0;
-    }
-
-    #inff{
-        padding-bottom: 0;
-        padding-top: 15px;
-    }
-
-    .social>ul>li{
-        margin: 10px; 
-    }
-    .social>ul>li>img{
-        width: 130%;
-    }
-}
-
-@media (max-width:1315px){
-    #logo {
-        width: 120%;
-    }
-
-    .lst>li{
-        font-size: 150%;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 950px){
-    
-    .lst>li{
-        font-size: 129%; 
-    }
-}
-
-@media (max-width:886px){
-    #logo {
-        width: 100%;
-    }
-
-    .model>a>img{
-        width: 100%;
-    }
-    .model>p{
-        padding-top: 50px;
-    }
-
-}
-
-@media (max-width: 784px){
-    #logo{
-        width: 100%;
-    }
-}
 
 
 @media(max-width:600px){
@@ -455,26 +294,31 @@ overflow-x: hidden;
     width: 200px;
 
 }
+.lst>li{
+    font-size: 12px;
+}
+
 .buraco{
-    margin: 40% auto;
-    width: 60%;
+    margin: 50% auto;
+    width: 100%;
     text-align: center;
-    font-size: 7px;
 }
 
 #local{
-    width: 100%;
+    width: 200px;
     height: 25px;
     padding: 5px;
     border-radius: 5px;
     border: none;
 }
 #data{
-    width: 49.39%;
+    width: 100px;
 }
 #hora{
-    width: 49.9%;
+    width: 100px;
 }
+
+/* */
 
 .restante{
 display: grid;
@@ -488,7 +332,7 @@ margin-top: 0%;
 .texto{
 margin-top: 0%;
 text-align: center;
-background-color: rgb(0, 0, 0);
+background-color: rgb(219, 219, 219);
 padding: 0.5%;
 }
 
@@ -496,11 +340,9 @@ padding: 0.5%;
 .car{
 display: flex;
 flex-direction: column;
-background-color: rgb(0, 0, 0);
+background-color: #fff;
 justify-content: center;
 align-items: center;
-width: 100%;
-
 }
 
 .texto2{
@@ -513,12 +355,16 @@ font-size: 2.5em;
 }
 
 .model{
-width: 50%;
+width: 70%;
 margin-left: 1.2%;
-border: 1px solid gold;
+border: 1px solid #000;
 text-align: center;
 margin-bottom: 1.7%;
-font-size: 1em;
+font-size: 1.5em;
+}
+.model>p{
+padding:1%;
+font-size: 0.7em;
 }
 
 h2{
@@ -529,7 +375,7 @@ width: 70%;
 }
 
 .cliente{
-background-color: rgb(0, 0, 0);
+background-color: rgb(219, 219, 219);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -541,12 +387,11 @@ padding-bottom:5%;
 .cli{
 width: 50%;
 height: 90%;
-border: 1px solid gold;
+border: 1px solid #000;
 text-align: center;
 margin: 0.5%;
 padding: 3%;
 }
-
 .cli>img{
 width: 40%;
 border-radius: 50%;
@@ -566,28 +411,23 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: #000;
-color: gold;
+color: #fff;
 padding: 1%;
 text-align: center;
-font-size: 20px;
-flex-wrap: wrap;
+font-size: 13px;
 }
-
 .app>.info{
 justify-content: space-between;
 }
-
 .imagem>img{
-width: 70%;
-margin-bottom: 5%;
+width: 100%;
+margin-left: 1%;
+}
+.info>img{
+width: 30%;
+margin-right: 1%;
 }
 
-.info>img{
-width: 25%;
-margin-right: 1%;
-margin-bottom: 1%;
-margin-top: 3%;
-}
 
 .suporte{
 width: 100%;
@@ -671,58 +511,9 @@ border-radius: 50%;
 
 }
 }
-
-@media (max-width: 459px){
-    .lst>li{
-        font-size: 100%;
-    }
-
-    .localidade{
-        font-size: 7px;
-    }
-
-    #local{
-        width: 50%;
-        height: 25px;
-        padding: 5px;
-        border-radius: 5px;
-        border: none;
-    }
-    #data{
-        width: 49.39%;
-    }
-    #hora{
-        width: 49.9%;
-    }
-    
-}
-
 @media(max-width:300px){
     .cabeca{
         flex-wrap: wrap;
         justify-content: center;
-    }
-    #logo{
-        width: 130px;
-    }
-    #logo1 {
-        width: 120px;
-    }
-
-    .buraco{
-        width: 80%;
-    }
-
-    .localidade{
-        font-size: 5px;
-    }
-
-    #inff{
-        font-size: 10px;
-        margin: 0;
-        text-align: center;
-    }
-    .log{
-        font-size: 11px;
     }
 }

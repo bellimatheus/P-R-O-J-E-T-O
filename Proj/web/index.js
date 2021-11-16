@@ -5,11 +5,13 @@ function mudarImg() {
 
 
     if (white.style.display == 'none') {
+
         white.style.display = 'flex'
         black.style.display = 'none'
     }else {
+        
         white.style.display = 'none'
         black.style.display = 'flex'
     }
-   
+
 }
