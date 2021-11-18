@@ -11,7 +11,7 @@ async function cadastrarCliente() {
     };
 
     try {
-        const url = "http:aaa0-2804-18-8c5-aa1d-e52a-67e8-1030-219d.ngrok.io/locadora/cliente";
+        const url = "http://localhost:8080/locadora/cliente";
         const settings = {
             method: 'POST',
             headers: {
@@ -25,10 +25,6 @@ async function cadastrarCliente() {
     } catch (erro) {
         console.log(erro)
     };
-}
-
-
-function login(){
-    window.location.href = '/home/';
-
+    
+    window.location.href = '/home/index.html';
 }

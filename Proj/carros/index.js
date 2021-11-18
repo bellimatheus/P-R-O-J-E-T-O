@@ -4,7 +4,7 @@ console.log(dados);
 
 var veiculos = document.querySelector('.veiculos');
 
-const url = "http://fe7f-2804-214-8592-c1a2-c9f3-64f9-9f61-80c2.ngrok.io/locadora/veiculo";
+const url = "http://localhost:8080/locadora/veiculos";
 
 fetch(url)
 .then(resp => {

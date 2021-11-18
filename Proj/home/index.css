@@ -40,12 +40,26 @@ html {
     flex-wrap: wrap;
 }
 
+.taag:hover{
+    color: gold;
+    cursor: pointer;
+}
+
 .lst>li{
     margin: 3vw;
     justify-content: space-around;
     list-style-type: none;
     font-size: 30px;
 }
+
+#name{
+    border: none;
+}
+
+#name:hover{
+    color: black;
+}
+
 #logo{
     background-color: gold;
 }
@@ -121,7 +135,8 @@ a:hover{
 }
 
 #btn{
-    width: 40%;
+    width: 150px;
+    height: 20px;
     background-color: #000;
     color: #fff;
     border: 1px solid #fff;
@@ -361,19 +376,17 @@ textarea{
 }
 /**/
 
-
 @media (max-width:1920px) {
     #logo {
-        width: 400px;
+        width: 340px;
     }
 
     .lst>li{
-        font-size: 250%;
+        font-size: 160%;
     }
     
     .buraco{
         margin: 220px auto;
-        margin-bottom: 0px;
         width: 50%;
         text-align: center;
     }
