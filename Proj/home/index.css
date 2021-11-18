@@ -377,8 +377,12 @@ textarea{
 /**/
 
 @media (max-width:1920px) {
+    .head{
+        height: 60vh;
+    }
+
     #logo {
-        width: 340px;
+        width: 400px;
     }
 
     .lst>li{
@@ -386,7 +390,7 @@ textarea{
     }
     
     .buraco{
-        margin: 220px auto;
+        margin: 250px auto;
         width: 50%;
         text-align: center;
     }

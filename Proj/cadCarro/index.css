@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
-    color: a#323232;
+    color: gold;
     border: none;
 }
 
@@ -113,4 +113,8 @@ input[type="submit"] {
 .error-validation {
     color: #ff1a1a;
     font-size: 12px;
+}
+
+@media (max-width: 1920px) {
+
 }

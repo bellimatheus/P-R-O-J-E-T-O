@@ -23,7 +23,6 @@ async function sapoha() {
     } catch (erro) {
         console.log(erro)
     };
-    verifica();
     
 }
 
