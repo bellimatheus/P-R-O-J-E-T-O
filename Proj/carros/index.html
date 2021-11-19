@@ -11,7 +11,7 @@
     <title>Vilebe</title>
 </head>
 
-<body>
+<body onload="aaa()">
     <header class="head">
 
         <div class="cabeca">
@@ -57,7 +57,7 @@
             <h3 class="">Esportivo</h3>
         </div>
         <div class="carritos">
-            <div class="pic-ctn model">
+            <div class="pic-ctn">
                 <img src="/assests/Carros/RRPop.png" alt="" class="pic">
                 <img src="/assests/Carros/RREco.png" alt="" class="pic">
                 <img src="/assests/Carros/RRSUV.png" alt="" class="pic">
@@ -65,7 +65,7 @@
                 <img src="/assests/Carros/RREsportivo.png" alt="" class="pic">
             </div>
 
-            <div class="pic-ctn model">
+            <div class="pic-ctn">
                 <img src="/assests/Carros/RRPop(3).png" alt="" class="pic">
                 <img src="/assests/Carros/RREco2.png" alt="" class="pic">
                 <img src="/assests/Carros/RRSUV2.png" alt="" class="pic">
@@ -73,7 +73,7 @@
                 <img src="/assests/Carros/RREsportivo(1).png" alt="" class="pic">
             </div>
 
-            <div class="pic-ctn model">
+            <div class="pic-ctn">
                 
                 <img src="/assests/Carros/RRPop(3).png" alt="" class="pic">
                 <img src="/assests/Carros/RREco2.png" alt="" class="pic">
@@ -82,7 +82,7 @@
                 <img src="/assests/Carros/RREsportivo(1).png" alt="" class="pic">
             </div>
 
-            <div class="pic-ctn model">
+            <div class="pic-ctn">
                 <img src="/assests/Carros/RRPop.png" alt="" class="pic">
                 <img src="/assests/Carros/RREco.png" alt="" class="pic">
                 <img src="/assests/Carros/RRSUV.png" alt="" class="pic">
@@ -95,310 +95,41 @@
         <form class="example" action="">
             <input type="text" placeholder="Search.." name="search">
         </form>
+        <div id="popUp">
+            <img src="">
+            <p id="title"></p>
+            <p id="des0"></p>
+            <p id="des1"></p>
+            <p id="des2"></p>
+            <p id="des3"></p>
+        </div>
         <h3>Economicos</h3>
-        <div class="veiculos">
-            <div class="pad modal">
-                <img id="captura" src="">
-                <p class="title">Renault Kwid Life</p>
-                <p class="preco">AA</p>
-            </div>
-
-            <div class="popUp modal">
-                <div class="sobre">
-                    <span onClick="closeModal()">
-                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/106/106830.png" /> -->
-                    </span>
-                    <div class="infos">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="veiculos">
-            <div class="pad modal">
-                <img id="captura" src="">
-                <p>Renault Kwid Life</p>
-                <p>AA</p>
+        <div class="economico ">
+            <div class="carlos model">
+                <img src="">
+                <a href="#" onclick="abrir()"><p id="title"></p></a>
+                <a href="#" onclick="abrir()"><p id="des"></p></a>
             </div>
         </div>
 
-        <h3 id="pop" >Populares</h3>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>AA</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>AA</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>AA</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-        </div>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
+        <h3>Populares</h3>
+        <div class="popular">
+
         </div>
 
-        <h3 id="pop">Wagon(carro de familia)</h3>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-        </div>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
+        <h3>Wagon</h3>
+        <div class="wagon">
+
         </div>
 
-        <h3 id="pop">4x4/AWD/Minivan</h3>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-        </div>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-        </div>
-        <h3 id="pop">Caminhão Comercial</h3>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-        </div>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
+        <h3>SUV</h3>
+        <div class="suv">
+
         </div>
 
-        <h3 id="pop">Esportivos</h3>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-        </div>
-        <div class="veiculos">
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
-            <div class="pad">
-                <img src="/assests/Carros/RRPop.png">
-                <p>Renault Kwid Life</p>
-                <p>Preço</p>
-            </div>
+        <h3>Esportivos</h3>
+        <div class="esportivo">
+
         </div>
     </section>
     <footer class="parteDeBaixo">

@@ -103,7 +103,7 @@ a:hover{
     width: 100%;
 }
 
-#local, #local2{
+#local, #dev{
     width: 280px;
     height: 33px;
     padding: 5px;
@@ -115,14 +115,14 @@ a:hover{
     width:100%;
 }
 
-#data, #data2, #hora, #hora2{
+#data, #devData, #hora, #devHora{
     height: 33px;
     padding: 5px;
 
     border-radius: 5px;
     border: 1px solid gold;
 }
-#data, #data2{
+#data, #devData{
     width: 139px;
 }
 
@@ -130,7 +130,7 @@ a:hover{
     margin: 0;
 }
 
-#hora, #hora2{
+#hora, #devHora{
     width: 140px;
 }
 
@@ -423,6 +423,17 @@ textarea{
     }
 }
 
+@media(max-width:1366px){
+    .buraco{
+        margin: 260px auto;
+        width: 50%;
+        text-align: center;
+    }
+    .head{
+        height: 80vh;
+    }
+}
+
 @media (max-width:1315px){
     #logo {
         width: 120%;
@@ -460,7 +471,6 @@ textarea{
         width: 100%;
     }
 }
-
 
 @media(max-width:600px){
 

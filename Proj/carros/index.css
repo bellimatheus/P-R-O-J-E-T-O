@@ -227,8 +227,9 @@ h3:nth-child(5) {
     display: table;
 }
 
-.veiculos {
 
+
+.economico, .popular, .wagon, .suv, .esportivo {
     grid-gap: 0px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -238,9 +239,8 @@ h3:nth-child(5) {
     font-size: 25px;
     
 }
-
-.pad {
-    width: 91%;
+.carlos {
+    width: 100%;
     padding-top: 6%;
     padding-bottom: 6%;
     margin: 1%;
@@ -250,9 +250,29 @@ h3:nth-child(5) {
     border: 1px solid #000;
 }
 
-.pad>img{
-    width: 100%;
+.carlos>img{
+    width: 280px;
+    height: 200px;
+    padding: 10px;
+    margin-top: -20px;
 }
+
+.model{
+    visibility: hidden;
+    display: none;
+}
+
+#popUp{
+    background-color: #0b7dda;
+    width: 260px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    display:none;
+}
+
+
 
 h3 {
     margin-left: 1%;
@@ -367,11 +387,16 @@ h3 {
         font-size: 15px; 
     }
 
-    .veiculos{
+    .economico{
         width: 100%;
         font-size: 16px;
         padding-right:15px;
         padding-left: 4px;
+    }
+
+    .economico>img{
+        width: 200px;
+        height: 200px;
     }
 
     .carritos{

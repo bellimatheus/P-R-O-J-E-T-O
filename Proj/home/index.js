@@ -4,7 +4,7 @@ document.querySelector("#data").setAttribute("min", varr.getFullYear()+"-"+varr.
 document.querySelector("#devData").setAttribute("min", varr.getFullYear()+"-"+varr.getMonth()+"-"+varr.getDate());
 
 const host = JSON.parse(localStorage.getItem("user"));
-console.log(host)
+//console.log(host)
 
 var lst = document.querySelector(".lst");
 
@@ -31,8 +31,11 @@ function locacao(){
 
     let google = document.querySelectorAll(".aluga")[1];
     google.classList.remove("modal");
+
+    let botao = document.querySelector("#btn");
     
     if (!google.classList.contains("modal")) {
+        console.log(google)
         botao.addEventListener("click", () => {
             let database = {
                 "retirada": document.querySelector("#local").value,
@@ -42,17 +45,16 @@ function locacao(){
                 "dataDev": document.querySelector("#devData").value,
                 "horaDev": document.querySelector("#devHora").value
             }
+
             localStorage.setItem("busca", JSON.stringify(database));
-            window.location.href = "/carros/index.html"
-            botao.type = "submit";
-            console.log(botao);
+            console.log(database);
+            document.location.href = "/carros/index.html"
+            
         })
+        
     }
 }
 
 
-function CLEAR(){
-    localStorage.clear(localStorage.getItem("user"));
-}
 
 
