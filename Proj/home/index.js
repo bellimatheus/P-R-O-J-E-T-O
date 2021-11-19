@@ -4,25 +4,25 @@ document.querySelector("#data").setAttribute("min", varr.getFullYear()+"-"+varr.
 document.querySelector("#devData").setAttribute("min", varr.getFullYear()+"-"+varr.getMonth()+"-"+varr.getDate());
 
 const host = JSON.parse(localStorage.getItem("user"));
-//console.log(host)
+console.log(host)
 
 var lst = document.querySelector(".lst");
+var taag = document.getElementById("lis");
 
 if (host != null) { 
     var nome = document.getElementById("name");
     nome.innerHTML = "Olá " + host.nome;
-    nome.style = "color:#000; padding-top: 15px; border:none";
-    // nome.style.hover = "color:gold";
-    // var taag = document.getElementById("lis");
-    // taag.className = "taag";
-    // taag.innerHTML = "Sair?"
-    // lst.appendChild(taag);
-    // taag.addEventListener("click", () => {
-    //     CLEAR();
-    //     refresh();
-    // })
-}
+    nome.style = "color:#fff; border:none";
+    taag.className = "taag";
+    taag.style = "padding-top: 5.5%; font-size:27px;"
+    taag.innerHTML = "Sair?"
+    taag.addEventListener("click", () => {
+        localStorage.removeItem("user");
+        document.location.href = "/home/index.html";
+    })
+    lst.appendChild(taag);
 
+}
 
 
 var lugar = document.querySelector(".buraco");

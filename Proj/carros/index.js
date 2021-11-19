@@ -42,7 +42,6 @@ function aaa(){
         data.forEach(e => {
             let model = document.querySelector(".carlos").cloneNode(true);
             model.classList.remove("model");
-            console.log(model)
             let imagem = model.querySelector("img")
             imagem.src = e.img;
             model.querySelectorAll("p")[0].innerHTML = e.marca;
@@ -82,33 +81,32 @@ function aaa(){
 }
 
 function abrir(){
-    let Pop = document.getElementById("#popUp")
+
     fetch(url, {
         method: 'GET',
     })
-    .then(resp => {
-        return resp.json();
-    })
+    .then(resp => { return resp.json()})
     .then(data => {
         data.forEach(e => {
-            let Pop = document.getElementById("#popUp").cloneNode(true);
-            Pop.style.display = "block";
-            let imagem = Pop.querySelector("img")
-            imagem.src = e.img;
-            Pop.createElement("p")[0].innerHTML = e.tipo;
-            Pop.createElement("p")[1].innerHTML = e.modelo;
-            Pop.createElement("p")[2].innerHTML = e.marca;
-            Pop.createElement("p")[3].innerHTML = e.placa;
-            Pop.createElement("p")[4].innerHTML = e.espf;
+            let card = document.querySelector("#popUp").cloneNode(true);
+            // let image = document.querySelector(".cap");
+            // image.addEventListener("click", () => {
+            //     image.src = e.img;
+            // })
+
+            card.querySelectorAll("p")[0].innerHTML = e.marca;
+            card.querySelectorAll("p")[1].innerHTML = e.modelo;
+            card.querySelectorAll("p")[2].innerHTML = e.placa;
+            card.querySelectorAll("p")[3].innerHTML = e.espf;
+
+            card.style.display = "block";
+            card.style.visibility = "visible";
+            body.style.overflow = "hidden"
+            
         })
-        
-    
-    })
-    .catch(err => {
-        console.log(err);
+
     })
 
-    
 }
 
 

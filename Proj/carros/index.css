@@ -162,7 +162,6 @@ a:hover{
     animation: display 10s infinite;
 }
 
-
 .pic:nth-child(2) {
     animation-delay: 2s;
 }
@@ -230,11 +229,11 @@ h3:nth-child(5) {
 
 
 .economico, .popular, .wagon, .suv, .esportivo {
-    grid-gap: 0px;
+    grid-gap: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: center;
-    background-color: #70b4b1;
+    background-color: rgb(182, 190, 192);
     text-align: center;
     font-size: 25px;
     
@@ -248,6 +247,16 @@ h3:nth-child(5) {
     margin-right: 10%;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #000;
+}
+
+#title, #des{
+    color: black;
+}
+#des:hover{
+    color: gold;
+}
+#title:hover{
+    color: gold;
 }
 
 .carlos>img{
@@ -333,6 +342,15 @@ h3 {
 .social>ul>li>img{
     width: 100%;
     border-radius: 50%;
+}
+
+@media(max-width:1920px) {
+    .pic-ctn>img{
+        width: 90%;
+    }
+    .tieppos > h3{
+        padding-left: 8.5%;
+    }
 }
 
 @media(max-width:1000px){
