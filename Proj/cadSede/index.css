@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: gold;
+    border: none;
+}
+
+input,
+label {
+    display: block;
+    outline: none;
+    width: 100%;
+}
+
+#reg{
+    color: gold;
+}
+
+#reg:hover{
+    color:azure ;
+}
+
+body {
+    background-image: url("/assests/Carros/images1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+img{
+    background-color: gold;
+    margin-left: 8%;
+    margin-bottom: 1vh;
+    width: 80%;
+    cursor: pointer;
+}
+
+#main-container {
+    margin-top: 1%;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.92);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+form {
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 35%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    padding-top: 1vh;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid gold;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+
+input:focus {
+    border-color: white;
+}
+
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    align-items: center;
+    text-align: center;
+    padding: 2vh;
+}
+
+.error-validation {
+    color: #ff1a1a;
+    font-size: 12px;
+}
+
+@media (max-width: 1920px) {
+
+}

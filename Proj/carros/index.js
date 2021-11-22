@@ -26,12 +26,34 @@ function get(url) {
 //     return iinf;
     
 
-// }
-var url = 'http://localhost:8080/locadora/veiculo'
+// },
 
-function aaa(){
-    
-    
+function principal2() {
+    let url = "http://localhost:8080/locadora/seda"
+    fetch(url, {
+        method: "GET",
+    })
+    .then(resp => {
+        return resp.json();
+    })
+    .then(data => {
+        data.forEach(e => {
+            console.log(e)
+            let retirada = dados.retirada
+            let sede = e.nome
+            if (retirada === sede){
+                aaa(e.idSede);
+            }else{
+                console.log("erro")
+            }
+            
+        })
+    })
+}
+
+
+function aaa(ele){
+    let url = 'http://localhost:8080/locadora/veiculo'
     fetch(url, {
         method: 'GET',
     })
@@ -40,15 +62,45 @@ function aaa(){
     })
     .then(data => {
         data.forEach(e => {
+            
+
+            
             let model = document.querySelector(".carlos").cloneNode(true);
             model.classList.remove("model");
             let imagem = model.querySelector("img")
             imagem.src = e.img;
+            model.querySelector('#botao').addEventListener('click',()=>{
+                document.querySelector('.container-car').style = 'display:flex; transition: opacity 0.5s ease'
+                
+                let card = document.querySelector(".popUp");
+                let img = card.querySelector("#cap");
+                img.style = "width:500px; "
+                img.src = e.img;
+                card.querySelectorAll("p")[0].innerHTML = e.tipo;
+                card.querySelectorAll("p")[1].innerHTML = e.marca;
+                card.querySelectorAll("p")[2].innerHTML = e.modelo;
+                card.querySelectorAll("p")[3].innerHTML = e.placa;
+                card.querySelectorAll("p")[4].innerHTML = e.espf;
+                console.log(card) 
+
+                let close = document.querySelector("#close");
+                close.addEventListener('click',()=>{
+                    document.querySelector('.container-car').style = 'opacity:0'
+                })
+
+                let aluga = document.querySelector("#aluga");
+                aluga.addEventListener('click', () => {
+                    dadoos(e.idVeiculo, ele);
+                })
+            })
+
+
             model.querySelectorAll("p")[0].innerHTML = e.marca;
             model.querySelectorAll("p")[1].innerHTML = e.modelo;
             let economico = document.querySelector(".economico");
             let popular = document.querySelector(".popular");
             let wagon = document.querySelector(".wagon");
+            let van = document.querySelector(".van");
             let suv = document.querySelector(".suv");
             let esportivo = document.querySelector(".esportivo");
             
@@ -64,6 +116,10 @@ function aaa(){
                 wagon.appendChild(model);                
             }
 
+            if("Van" == e.tipo){
+                van.appendChild(model);                
+            }
+
             if("SUV" == e.tipo){
                 suv.appendChild(model);                
             }
@@ -71,43 +127,66 @@ function aaa(){
             if("Esportivo" == e.tipo){
                 esportivo.appendChild(model);                
             }
-        })
-        
-    
+        })    
     })
     .catch(err => {
         console.log(err);
     })
 }
 
-function abrir(){
-
+function dadoos(idVeiculo, idSede){
+    let url = 'http://localhost:8080/locadora/locacoes'
+    
+    let database = {
+        "idVeiculo": idVeiculo,
+        "idSede": idSede,
+        "DataRetirada": dados.data,
+        "DataDevolucao": dados.dataDev,
+        "LocalRetirada": dados.retirada,
+        "LocalDevolucao": dados.devolucao
+    }
     fetch(url, {
-        method: 'GET',
+        method: "POST",
+        body: JSON.stringify(database)
     })
-    .then(resp => { return resp.json()})
+    .then( resp => {
+        return resp.status;
+    })
     .then(data => {
-        data.forEach(e => {
-            let card = document.querySelector("#popUp").cloneNode(true);
-            // let image = document.querySelector(".cap");
-            // image.addEventListener("click", () => {
-            //     image.src = e.img;
-            // })
-
-            card.querySelectorAll("p")[0].innerHTML = e.marca;
-            card.querySelectorAll("p")[1].innerHTML = e.modelo;
-            card.querySelectorAll("p")[2].innerHTML = e.placa;
-            card.querySelectorAll("p")[3].innerHTML = e.espf;
-
-            card.style.display = "block";
-            card.style.visibility = "visible";
-            body.style.overflow = "hidden"
-            
-        })
-
+        console.log(data)
     })
-
 }
+
+
+
+    // fetch(url, {
+    //     method: 'GET',
+    // })
+    // .then(resp => { return resp.json()})
+    // .then(data => {
+    //     data.forEach(e => {
+    //         let card = document.querySelector("#popUp").cloneNode(true);
+    //         // let image = document.querySelector(".cap");
+    //         // image.addEventListener("click", () => {
+    //         //     image.src = e.img;
+    //         // })
+
+    //         card.querySelectorAll("p")[0].innerHTML = e.marca;
+    //         card.querySelectorAll("p")[1].innerHTML = e.modelo;
+    //         card.querySelectorAll("p")[2].innerHTML = e.placa;
+    //         card.querySelectorAll("p")[3].innerHTML = e.espf;
+
+    //         card.style.display = "block";
+    //         card.style.visibility = "visible";
+    //         body.style.overflow = "hidden"
+            
+    //     })
+
+    // })
+
+
+
+
 
 
 
