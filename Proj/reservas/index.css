@@ -6,6 +6,7 @@
 html,body{
     margin: 0;
     padding: 0;
+    background-color: #000000;
     font-family: 'Times New Roman', Times, serif;
     flex-direction: column;
 }
@@ -20,8 +21,6 @@ html {
 }
 .cabeca{
     display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.822);
 }
 
 .ggizi{
@@ -56,7 +55,6 @@ a:hover{
 .restante {
     display: grid;
     grid-template-rows: auto, auto, auto, auto;
-    background-color: #000000;
 }
 
 .previa {
@@ -67,7 +65,7 @@ a:hover{
 }
 
 
-.model{
+.modal{
     visibility: hidden;
     display: none;
 }
@@ -82,7 +80,6 @@ a:hover{
     width: 100%;
     margin-top: 8%;
     grid-gap: 2px;
-    background-color: #000000;
     font-size: 25px;    
 }
 
@@ -94,6 +91,8 @@ a:hover{
     font-size: 20px;
     color: gold;
     margin: 5% 0% 5% 2%;
+    display: none;
+    visibility: hidden;
 }
 .pad>img{
     width: 260px;

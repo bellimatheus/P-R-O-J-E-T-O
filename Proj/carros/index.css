@@ -228,7 +228,7 @@ h3:nth-child(5) {
 
 
 
-.economico, .popular, .wagon, .suv, .esportivo, .van {
+.economico, .popular, .wagon, .suv, .esportivo {
     grid-gap: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -252,6 +252,12 @@ h3:nth-child(5) {
 #title, #des{
     color: black;
 }
+#des:hover{
+    color: gold;
+}
+#title:hover{
+    color: gold;
+}
 
 .carlos>img{
     width: 280px;
@@ -259,6 +265,7 @@ h3:nth-child(5) {
     padding: 10px;
     margin-top: -20px;
 }
+
 
 .container-car{
     background-color: rgba(0, 0, 0, 0.822);
@@ -292,10 +299,6 @@ button{
     padding: 10px 25px;
     font-size: 14px;
 }
-/* button:hover{
-    background-color: rgb(136, 144, 145);
-    color: rgb(0, 0, 0);
-} */
 
 /* .modal{
     visibility: hidden;
@@ -306,17 +309,6 @@ button{
     visibility: hidden;
     display: none;
 }
-
-#popUp{
-    background-color: #0b7dda;
-    width: 260px;
-    height: 200px;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    display:none;
-}
-
 
 
 h3 {

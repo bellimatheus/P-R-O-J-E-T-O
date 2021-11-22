@@ -1,31 +1,28 @@
 const dados = JSON.parse(localStorage.getItem('busca'));
 console.log(dados);
 
+const host = JSON.parse(localStorage.getItem("user"));
+console.log(host)
 
-function get(url) {
-    let request = new XMLHttpRequest();
-    request.open('GET', url, false);
-    request.send()
-    return request.responseText
-}
 
+// function get(url) {
+//     let request = new XMLHttpRequest();
+//     request.open('GET', url, false);
+//     request.send()
+//     return request.responseText
+// }
 // function criandoCarros(carritos) {
 //     let iinf = document.querySelector('.pad');
-    
 //     let imagem = document.createElement("img");
 //     model = document.querySelector("#title");
 //     marc = document.querySelector("#des");
 //     imagem.src = carritos.img;
 //     model.innerHTML = carritos.marca;
 //     marc.innerHTML = carritos.modelo;
-
 //     iinf.appendChild(imagem);
 //     iinf.appendChild(model);
 //     iinf.appendChild(marc);
-
 //     return iinf;
-    
-
 // },
 
 function principal2() {
@@ -38,11 +35,12 @@ function principal2() {
     })
     .then(data => {
         data.forEach(e => {
-            console.log(e)
             let retirada = dados.retirada
             let sede = e.nome
+
             if (retirada === sede){
                 aaa(e.idSede);
+                
             }else{
                 console.log("erro")
             }
@@ -62,8 +60,6 @@ function aaa(ele){
     })
     .then(data => {
         data.forEach(e => {
-            
-
             
             let model = document.querySelector(".carlos").cloneNode(true);
             model.classList.remove("model");
@@ -91,6 +87,7 @@ function aaa(ele){
                 let aluga = document.querySelector("#aluga");
                 aluga.addEventListener('click', () => {
                     dadoos(e.idVeiculo, ele);
+                    alert("Locado com sucesso!");
                 })
             })
 
@@ -136,11 +133,14 @@ function aaa(ele){
 
 function dadoos(idVeiculo, idSede){
     let url = 'http://localhost:8080/locadora/locacoes'
+
     
     let database = {
+        "idCliente": host.idCliente, 
+        "nome": host.nome, 
         "idVeiculo": idVeiculo,
         "idSede": idSede,
-        "DataRetirada": dados.data,
+        "DataRetirada": dados.dataRet,
         "DataDevolucao": dados.dataDev,
         "LocalRetirada": dados.retirada,
         "LocalDevolucao": dados.devolucao
@@ -154,6 +154,9 @@ function dadoos(idVeiculo, idSede){
     })
     .then(data => {
         console.log(data)
+    })
+        .catch(err => {
+        console.log(err);
     })
 }
 
@@ -183,13 +186,6 @@ function dadoos(idVeiculo, idSede){
     //     })
 
     // })
-
-
-
-
-
-
-
 // var veiculos = document.querySelector('.veiculos');
 
 // const url = "http://localhost:8080/locadora/veiculo";

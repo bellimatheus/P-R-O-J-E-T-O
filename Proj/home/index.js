@@ -11,6 +11,8 @@ var taag = document.getElementById("lis");
 
 if (host != null) { 
     var nome = document.getElementById("name");
+    var demente = document.getElementById("name")
+    demente.href = "#";
     nome.innerHTML = "Olá " + host.nome;
     nome.style = "color:#fff; border:none";
     taag.className = "taag";
