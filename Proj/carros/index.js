@@ -4,26 +4,26 @@ console.log(dados);
 const host = JSON.parse(localStorage.getItem("user"));
 console.log(host)
 
+var lst = document.querySelector(".lst");
+var taag = document.getElementById("lis");
 
-// function get(url) {
-//     let request = new XMLHttpRequest();
-//     request.open('GET', url, false);
-//     request.send()
-//     return request.responseText
-// }
-// function criandoCarros(carritos) {
-//     let iinf = document.querySelector('.pad');
-//     let imagem = document.createElement("img");
-//     model = document.querySelector("#title");
-//     marc = document.querySelector("#des");
-//     imagem.src = carritos.img;
-//     model.innerHTML = carritos.marca;
-//     marc.innerHTML = carritos.modelo;
-//     iinf.appendChild(imagem);
-//     iinf.appendChild(model);
-//     iinf.appendChild(marc);
-//     return iinf;
-// },
+if (host != null) { 
+    var nome = document.getElementById("name");
+    var demente = document.getElementById("name")
+    demente.href = "#";
+    nome.innerHTML = "Olá " + host.nome;
+    nome.style = "color:#fff; border:none";
+    taag.className = "taag";
+    // taag.style = "hover:color: gold;"   
+    taag.style = "color:#fff; cursor: pointer;";
+    taag.innerHTML = "Sair?"
+    taag.addEventListener("click", () => {
+        localStorage.removeItem("user");
+        document.location.href = "/home/index.html";
+    })
+    lst.appendChild(taag);
+
+}
 
 function principal2() {
     let url = "http://localhost:8080/locadora/seda"

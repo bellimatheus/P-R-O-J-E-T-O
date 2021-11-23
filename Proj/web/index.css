@@ -6,7 +6,7 @@
 html,body{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'PT Sans', sans-serif;
     flex-direction: column;
 }
 html {
@@ -39,8 +39,13 @@ html {
     flex-wrap: wrap;
 }
 
+.taag:hover{
+    color: gold;
+    cursor: pointer;
+}
+
 .lst>li{
-    margin: 3vw;
+    margin: 2.5vw;
     justify-content: space-around;
     list-style-type: none;
     font-size: 30px;
@@ -56,15 +61,6 @@ a{
 a:hover{
     color: gold;
 }
-/* .joe{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 0%;
-    background-color: rgba(0, 0, 0, 0.568);
-} */
-
-
 
 .restante{
     display: grid;

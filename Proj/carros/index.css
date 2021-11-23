@@ -1,3 +1,10 @@
+/* @font-face {
+    font-family: gargarejo;
+    src: url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&family=Roboto:wght@900&display=swap');
+} */
+
+@import url('');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,9 +14,10 @@
 html,body{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'PT Sans', sans-serif;
     flex-direction: column;
     overflow-x: hidden;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -239,6 +247,7 @@ h3:nth-child(5) {
     
 }
 .carlos {
+    
     width: 100%;
     padding-top: 6%;
     padding-bottom: 6%;
@@ -251,12 +260,6 @@ h3:nth-child(5) {
 
 #title, #des{
     color: black;
-}
-#des:hover{
-    color: gold;
-}
-#title:hover{
-    color: gold;
 }
 
 .carlos>img{
@@ -287,6 +290,13 @@ h3:nth-child(5) {
     width: 600px;
     max-width: 100%;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#cap{
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0px 1px 10px #000;
 }
 
 button{

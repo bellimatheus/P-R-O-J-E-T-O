@@ -16,7 +16,8 @@ if (host != null) {
     nome.innerHTML = "Olá " + host.nome;
     nome.style = "color:#fff; border:none";
     taag.className = "taag";
-    taag.style = "padding-top: 5.5%; font-size:27px;"
+    //taag.style = "#fff"
+    // taag.style = "padding-top: 5.5%; font-size:27px;"
     taag.innerHTML = "Sair?"
     taag.addEventListener("click", () => {
         localStorage.removeItem("user");

@@ -7,7 +7,7 @@ html,body{
     margin: 0;
     padding: 0;
     background-color: #000000;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'PT Sans', sans-serif;
     flex-direction: column;
 }
 html {
@@ -21,6 +21,8 @@ html {
 }
 .cabeca{
     display: flex;
+    align-items: center;
+    color: white;
 }
 
 .ggizi{
@@ -32,10 +34,16 @@ html {
 .lst{
     display: flex;
     flex-wrap: wrap;
+    
+}
+
+#lis:hover{
+    color: gold;
+    cursor: pointer;
 }
 
 .lst>li{
-    margin-right: 5vw;
+    margin-right: 2.5vw;
     justify-content: space-around;
     list-style-type: none;
     font-size: 30px;
@@ -84,7 +92,7 @@ a:hover{
 }
 
 .pad {
-    width: 90%;
+    width: 100%;
     margin: 0;
     padding: 1%;
     border: 1px solid gold;
@@ -93,11 +101,22 @@ a:hover{
     margin: 5% 0% 5% 2%;
     display: none;
     visibility: hidden;
+    text-align: center;
+    border-radius: 5px;
 }
 .pad>img{
-    width: 260px;
-    height: 200px;
-    padding-bottom: 10%;
+    width: 240px;
+    height: 170px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.pad>p{
+    text-align: center;
+    align-items: left;
+    padding-left: 20px;
+    border-radius: 6px;
+    background-color: rgba(162, 208, 230, 0.37);
 }
 
 
