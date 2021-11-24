@@ -3,8 +3,6 @@
     src: url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&family=Roboto:wght@900&display=swap');
 } */
 
-@import url('');
-
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +32,6 @@ html {
 }
 .cabeca{
     display: flex;
-    
     align-items: center;
     background-color: rgba(0, 0, 0, 0.596);
 }
@@ -53,7 +50,7 @@ html {
     margin: 3vw;
     justify-content: space-around;
     list-style-type: none;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 #carro{
@@ -236,7 +233,7 @@ h3:nth-child(5) {
 
 
 
-.economico, .popular, .wagon, .suv, .esportivo {
+.economico, .popular, .wagon, .van, .suv, .esportivo {
     grid-gap: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -283,7 +280,7 @@ h3:nth-child(5) {
 }
 
 .popUp{
-    background-color: #f1f1f1;
+    background-color: rgba(255, 217, 0, 0.199);
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 30px 50px;
@@ -293,21 +290,41 @@ h3:nth-child(5) {
     font-family: 'Roboto', sans-serif;
 }
 
-#cap{
+.carrd{
+    border: 1px solid #000;
+    background-color: #000;
+    box-shadow: 0px 1px 10px #000;
+    color: gold;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.carrd>img{
+    width: 400px;
+    margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #000;
-    box-shadow: 0px 1px 10px #000;
+    
+}
+
+.informs{
+    margin-top: 5px
 }
 
 button{
-    background-color: #000000;
+
+    background-color: gold;
     border: 0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-top: 15px;
     padding: 10px 25px;
     font-size: 14px;
+    font-family: Sans;
+    font-weight: bold;
+    margin-bottom: 10px
 }
 
 /* .modal{
@@ -416,6 +433,10 @@ h3 {
     #text{
         font-size: 20px;
     }
+
+    .log{
+        color: black;
+    }
 }
 
 @media(max-width:600px){
@@ -471,6 +492,7 @@ h3 {
         width: 100%;
         height: 100%;
         margin-top: 10%;
+        color: black;
     }
         
     .log{
@@ -478,9 +500,13 @@ h3 {
     }
         
     .parteDeBaixo>.log>a>img{
-        background-color: #6e04a0;
+        background-color: gold;
         width: 90%;
         
+    }
+
+    .log{
+        color: black;
     }
         
     .social{
@@ -498,7 +524,7 @@ h3 {
         border-radius: 50%;
     }
     .parteDeBaixo>.log>a>img{
-        background-color: #6e04a0;
+        background-color: gold;
         width: 200px;
         
     }
@@ -550,6 +576,14 @@ h3 {
 
     .pic-ctn>img{
         width: 100%;
+    }
+
+    .parteDeBaixo{
+        color: black;
+    }
+
+    .log{
+        color: black;
     }
 
     #logo1 {

@@ -34,10 +34,10 @@ function principal2() {
         return resp.json();
     })
     .then(data => {
+        
         data.forEach(e => {
             let retirada = dados.retirada
             let sede = e.nome
-
             if (retirada === sede){
                 aaa(e.idSede);
                 
@@ -50,9 +50,22 @@ function principal2() {
 }
 
 
+let url1 = 'http://localhost:8080/locadora/veiculo'
+
+// let loca = {
+//     "tipo": document.querySelector("#tt1").value,
+//     "modelo": document.querySelector("#tt2").value,
+//     "marca": document.querySelector("#tt3").value,
+//     "placa": document.querySelector("#tt4").value,
+//     "espf": document.querySelector("#tt5").value,
+//     "img": document.querySelector("#cap").value
+// }
+
+// localStorage.setItem("location", JSON.stringify(loca))
+
 function aaa(ele){
-    let url = 'http://localhost:8080/locadora/veiculo'
-    fetch(url, {
+    
+    fetch(url1, {
         method: 'GET',
     })
     .then(resp => {
@@ -70,7 +83,7 @@ function aaa(ele){
                 
                 let card = document.querySelector(".popUp");
                 let img = card.querySelector("#cap");
-                img.style = "width:500px; "
+                //img.style = "width:500px; "
                 img.src = e.img;
                 card.querySelectorAll("p")[0].innerHTML = e.tipo;
                 card.querySelectorAll("p")[1].innerHTML = e.marca;
@@ -145,6 +158,7 @@ function dadoos(idVeiculo, idSede){
         "LocalRetirada": dados.retirada,
         "LocalDevolucao": dados.devolucao
     }
+    localStorage.setItem("locacao", JSON.stringify(database));
     fetch(url, {
         method: "POST",
         body: JSON.stringify(database)
